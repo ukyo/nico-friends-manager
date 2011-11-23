@@ -1,0 +1,106 @@
+body, html, ul, li{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+body, html {
+  width: 480px;
+  height: 320px;
+}
+
+nav {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+input {
+  margin-top: 30px;
+  width: 330px;
+}
+
+article {
+  display: block;
+  height:320px;
+  overflow-y: scroll;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+  text-align: center;
+  width: 160px;
+  padding: 5px 0;
+  background-color: #2B2E2E;
+  color: #fdfdfd;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.35) inset;
+}
+
+li:hover {
+  background-color: #313F54;
+  color: #fdfdfd;
+  cursor: pointer;
+}
+
+li.selected {
+  background-color: #C84663;
+  color: #2E2E2E;
+}
+
+div {
+  color: #444;
+}
+
+.item {
+  width: 468px;
+  height: 48px;
+  background-color: #ddd;
+  font-size: 14px;
+  border-top: #eee 1px solid;
+  border-bottom: #bbb 1px solid;
+}
+
+.name {
+  color:#313F54;
+  margin: 3px 3px 0 3px;
+  font-size: 12px;
+}
+
+.description {
+  margin:  3px 3px 0 3px;
+  font-size: 10px;
+}
+
+img {
+  float: left;
+}
+
+.disable {
+  display: none;
+}
+
+.checked {
+  background-color: #ccc;
+  border-top: #ddd 1px solid;
+  border-bottom: #aaa 1px solid;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #595855;
+  margin-left: 1px;
+  border-radius: 2px;
+}

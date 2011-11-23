@@ -1,0 +1,24 @@
+{
+	"name": "Nico Friends Manager",
+	"version": "0.1.1",
+	"description": "ニコニコ動画のフレンドの管理を簡単に行うことができます。",
+	"icons": {
+		"32": "image/32.png",
+		"48": "image/48.png",
+		"128": "image/128.png"
+	},
+	
+	"browser_action": {
+		"default_icon": "image/browser_action_icon.png",
+		"default_title": "Nico Friends Manager",
+		"popup": "html/popup.html"
+	},
+	
+	"background_page": "html/background.html",
+	"options_page": "html/options.html",
+	"permissions": [
+		"notifications",
+		"http://www.nicovideo.jp/*",
+		"http://usericon.nimg.jp/*"
+	]
+}

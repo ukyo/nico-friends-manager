@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="../js/jquery-1.7.1pre-for-chrome-extensions.min.js"></script>
+    <script type="text/javascript" src="../js/imagecache.js"></script>
+    <script type="text/javascript" src="../js/utils.js"></script>
+    <script type="text/javascript" src="../js/options.js"></script>
+    <script>
+      $(function(){
+        $("#interval").val(options.loadInterval() / 60000);
+        $("#max-history").val(options.maxHistory());
+        $("#submit").click(function(){
+          options.setLoadInterval($("#interval").val());
+          options.setMaxHistory($("#max-history").val());
+          $(this).after("<span>保存しました。</span>");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <label>更新間隔(分)</label><input id="interval" type="number" />
+    <label>履歴の最大保持数</label><input id="max-history" type="number" />
+    <button id="submit">決定</button>
+  </body>
+</html>
