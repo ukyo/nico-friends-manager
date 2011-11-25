@@ -1,6 +1,6 @@
 {
 	"name": "Nico Friends Manager",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "ニコニコ動画のフレンドの管理を簡単に行うことができます。",
 	"icons": {
 		"32": "image/32.png",

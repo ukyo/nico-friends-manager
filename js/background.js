@@ -21,7 +21,7 @@ function isLogin() {
 
 function loadNicoFriends( callback ) {
 	var friends = {},
-		oldFriends = utils.ls.get( "friends" ),
+		oldFriends = utils.ls.get( "friends" ) || {},
 		page = 1,
 		rhref = /href=\"[^h][^t][^t][^p]/,
 		rsrc = /src=\"[^h][^t][^t][^p]/,
