@@ -21,6 +21,7 @@ function isLogin() {
 
 function loadNicoFriends( callback ) {
 	var friends = {},
+		oldFriends = utils.ls.get( "friends" ),
 		page = 1,
 		rhref = /href=\"[^h][^t][^t][^p]/,
 		rsrc = /src=\"[^h][^t][^t][^p]/,
@@ -40,7 +41,7 @@ function loadNicoFriends( callback ) {
 						var $this = $(this),
 							a = $this.find("h4 > a"),
 							id = a.attr("href").split( '/user/' )[1];
-						friends[id] = friends[id] || {};
+						friends[id] = oldFriends[id] || {};
 						friends[id].name = a.text();
 						friends[id].description = $this.find("p").text().replace(/(\n|\r\n)/g, '');
 					});
